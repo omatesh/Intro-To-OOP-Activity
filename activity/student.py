@@ -8,6 +8,8 @@ class Student:
         self.enrollment_list.append(class_name)
 
     def get_num_classes(self):
-        return len(self.enrollment_list)
-    def summary(self):
-        return(f"{})
+        num_enrollment = len(self.enrollment_list)
+        return num_enrollment
+    
+    def summary(self, name, grade, num_enrollment):
+        return(f"{self.name} is a {self.grade} enrolled in {num_enrollment} classes")
